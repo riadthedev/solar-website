@@ -15,7 +15,7 @@ import Welcome from '@/components/home/Welcome'
 
 const Homepage = () => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({once: true});
   }, [])
   return (
     <main>
