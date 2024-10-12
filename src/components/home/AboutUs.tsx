@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react'
+'use client'
+import React from 'react'
 import SectionWrapper from './SectionWrapper'
 import { Button } from '../ui/button'
 import SectionHeader from './SectionHeader'
 
 const AboutUs = () => {
-    // useEffect(() => {
-    //     Aos.init();
-    // }, [third])
     
 return (
     <SectionWrapper classname='bg-white '>
