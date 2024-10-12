@@ -10,7 +10,7 @@ const LatestPost = () => {
                 <Button className='rounded-none text-[1.6rem] px-[1.8rem] py-[1.8rem] w-fit flex gap-x-2 hover:scale-[1.08] active:scale-[0.95] transition ease-in-out duration-300 self-center'><span>View More</span><img src="/assets/icons/view-arrow.svg" alt="" /></Button>
             </SectionHeader>
             <section className='flex justify-between'>
-                <div className='border border-[#E8E8E8] w-[40.3rem] '>
+                <div className='border border-[#E8E8E8] w-[40.3rem] ' data-aos='flip-right'  data-aos-duration="1000">
                     <img src="/assets/images/solar-man.png" className='w-full h-[26.2rem] object-cover' alt="" />
                     <div className='p-[2.6rem] space-y-[1.8rem]'>
                         <div className='flex gap-[1rem]'>
@@ -28,7 +28,7 @@ const LatestPost = () => {
                         <Button className='text-[1.6rem] bg-white text-primary shadow-none px-0 mt-[0.8rem] flex gap-x-2 hover:scale-[1.08] active:scale-[0.95] transition ease-in-out duration-300'><span>Read More</span> <img src='/assets/icons/right-arrow.svg' alt='Right Arrow'/></Button>
                     </div>
                 </div>
-                <div className='border border-[#E8E8E8] w-[40.3rem] '>
+                <div className='border border-[#E8E8E8] w-[40.3rem] ' data-aos='flip-right'  data-aos-duration="1000">
                     <img src="/assets/images/solar-panel-one.jpeg" className='w-full h-[26.2rem] object-cover' alt="" />
                     <div className='p-[2.6rem] space-y-[1.8rem]'>
                         <div className='flex gap-[1rem]'>
@@ -46,7 +46,7 @@ const LatestPost = () => {
                         <Button className='text-[1.6rem] bg-white text-primary shadow-none px-0 mt-[0.8rem] flex gap-x-2 hover:scale-[1.08] active:scale-[0.95] transition ease-in-out duration-300'><span>Read More</span> <img src='/assets/icons/right-arrow.svg' alt='Right Arrow'/></Button>
                     </div>
                 </div>
-                <div className='border border-[#E8E8E8] w-[40.3rem] '>
+                <div className='border border-[#E8E8E8] w-[40.3rem] ' data-aos='flip-right'  data-aos-duration="1000">
                     <img src="/assets/images/solar-panel-two.jpeg" className='w-full h-[26.2rem] object-cover' alt="" />
                     <div className='p-[2.6rem] space-y-[1.8rem]'>
                         <div className='flex gap-[1rem]'>

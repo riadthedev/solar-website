@@ -18,8 +18,8 @@ const VideoPlayer = () => {
 
   return (
     <SectionWrapper>
-        <div className="relative w-full flex flex-col justify-center items-center mx-auto">
-        <video ref={videoRef} controls={isPlaying}
+        <div className="relative w-full flex flex-col justify-center items-center mx-auto" data-aos='zoom-in-up'>
+        <video ref={videoRef} controls={isPlaying} 
          style={{ maxWidth: '1483px', maxHeight: '569.19px', width: '100%', height: 'auto' }}
         poster="/assets/images/video-one.png">
           <source src="/assets/videos/video-one.mp4" type="video/mp4" />

@@ -11,7 +11,7 @@ const Faqs = () => {
   return (
     <SectionWrapper classname='bg-secondary'>
         <SectionHeader highlight='FREQUENTLY ASKED QUESTIONS' hightlightStyle='bg-white text-primary' title='Everything you need to know about our services solutions'>
-            <section className='w-1/2'>
+            <section className='w-1/2' data-aos='fade-left'>
                {faqItems.map((item, index) => 
                <div className='flex py-[2.1rem] gap-x-6 border-b-[#E8E8E8] border-b transition ease-in-out duration-300 ' key={index}>
                     <p className={`${item.number === open ? "text-primary" : "text-black"} font-semibold text-[2.2rem] `}>{item.number}</p>

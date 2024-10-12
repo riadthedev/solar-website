@@ -1,19 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SectionWrapper from './SectionWrapper'
 import { Button } from '../ui/button'
 import SectionHeader from './SectionHeader'
 
 const AboutUs = () => {
+    // useEffect(() => {
+    //     Aos.init();
+    // }, [third])
+    
 return (
     <SectionWrapper classname='bg-white '>
             <SectionHeader highlight='ABOUT US' hightlightStyle='text-primary bg-secondary' title='We are the best of renewable energy'>
-                <p className='w-1/2 text-center text-[#737577] self-center'>
+                <p className='w-1/2 text-center text-[#737577] self-center' data-aos='fade-left'>
                     At Mentary, we believe in the power of renewable energy to create a more
                     sustainable future. With a passion for clean energy and a commitment to our
                     customers, we are dedicated to delivering the best possible solutions.
                 </p>
             </SectionHeader>
-            <div className='grid grid-cols-3 gap-x-[2rem] text-[#737577] justify-items-center leading-[2.56rem]'>
+            <div className='grid grid-cols-3 gap-x-[2rem] text-[#737577] justify-items-center leading-[2.56rem]' data-aos='fade-up'>
                 <article className='flex flex-col justify-between '>
                     <p>We're committed to revolutionizing the way you think about energy. Say goodbye to skyrocketing utility bills and hello to a brighter, greener future with our state-of-the-art solar energy solutions.</p>
                     <p>Your premier source for sustainable energy solutions. Explore our range of solar products and services designed to meet your energy needs.</p>
