@@ -10,14 +10,16 @@ import WhyChooseUs from '@/components/home/WhyChooseUs'
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Welcome from '@/components/home/Welcome'
 
 
 const Homepage = () => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({once: true});
   }, [])
   return (
     <main>
+      <Welcome/>
       <AboutUs />
       <OurServices />
       <WhyChooseUs />
