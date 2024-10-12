@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
+html {
   font-size: calc(100vw / 1423 * 10);
 
   line-height: 1;
@@ -16,20 +16,25 @@
   button {
     cursor: pointer;
   }
+}
 
-
-  @include media('<=smDesktop') {
-    font-size: calc(100vw / 1280 * 12);
+  @media (max-width: 1280px) {
+    html {
+      font-size: calc(100vw / 1280 * 10);
+    }
   }
-
-  @include media('<=tablet') {
-    font-size: calc(100vw / 1024 * 13);
+  
+  @media (max-width: 1024px) {
+    html {
+      font-size: calc(100vw / 1024 * 10);
+    }
   }
-
-  @include media('<=phone') {
-    font-size: calc(100vw / 725 * 14);
+  
+  @media (max-width: 725px) {
+    html {
+      font-size: calc(100vw / 725 * 10);
+    }
   }
-} */
 
 @layer base {
   :root {
@@ -46,11 +51,11 @@
 
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 240 5.9% 10%;
+    --primary: #96D055;
 
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 4.8% 95.9%;
+    --secondary: #F2F4E9;
 
     --secondary-foreground: 240 5.9% 10%;
 
