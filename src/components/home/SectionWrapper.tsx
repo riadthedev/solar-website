@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 interface SectionWrapperProps {
   children: ReactNode;
   classname?: string;
+  ref?: React.RefObject<HTMLDivElement>;
 }
 
 const SectionWrapper: React.FC<SectionWrapperProps> = ({children, classname, ...props}) => {
