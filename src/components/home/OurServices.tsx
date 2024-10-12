@@ -15,7 +15,7 @@ const OurServices = () => {
             </SectionHeader>
             <div className='flex leading-[2.56rem] gap-x-[3rem]'>
                 {cardItems.map((card, index) => 
-                    <div className={`bg-white h-[29.2rem] px-[4.2rem] justify-center gap-y-[1rem] flex flex-col items-center ${index % 2 && 'mt-[5rem]'}`} data-aos={index % 2 ? 'flip-left' : 'flip-right'}  data-aos-duration="1000">
+                    <div key={index} className={`bg-white h-[29.2rem] px-[4.2rem] justify-center gap-y-[1rem] flex flex-col items-center ${index % 2 && 'mt-[5rem]'}`} data-aos={index % 2 ? 'flip-left' : 'flip-right'}  data-aos-duration="1000">
                         <img src={card.image} className='size-[4.6rem]' alt={card.title} />
                         <h2>{card.title}</h2>
                         <p className='text-center text-[#737577]'>{card.description}</p>
