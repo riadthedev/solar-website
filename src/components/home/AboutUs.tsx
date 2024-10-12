@@ -4,9 +4,6 @@ import { Button } from '../ui/button'
 import SectionHeader from './SectionHeader'
 
 const AboutUs = () => {
-    // useEffect(() => {
-    //     Aos.init();
-    // }, [third])
     
 return (
     <SectionWrapper classname='bg-white '>
