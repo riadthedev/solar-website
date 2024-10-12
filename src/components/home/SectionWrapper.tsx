@@ -5,9 +5,9 @@ interface SectionWrapperProps {
   classname?: string;
 }
 
-const SectionWrapper: React.FC<SectionWrapperProps> = ({children, classname}) => {
+const SectionWrapper: React.FC<SectionWrapperProps> = ({children, classname, ...props}) => {
   return (
-    <section className={`px-[6.15rem] py-[12.8rem] text-[1.6rem] relative space-y-[5rem]  ${classname}`}>
+    <section className={`px-[6.15rem] py-[12.8rem] text-[1.6rem] relative space-y-[5rem]  ${classname}`} {...props}>
         {children}
     </section>
   )
