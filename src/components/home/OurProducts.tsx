@@ -2,9 +2,11 @@ import React from 'react'
 import SectionWrapper from './SectionWrapper'
 import SectionHeader from './SectionHeader'
 
-const OurProducts = () => {
+const OurProducts:React.FC<HomePageProps> = ({hide = false}) => {
   return (
     <>
+   { !hide && 
+   <>
     <SectionWrapper>
         <SectionHeader highlight='OUR PROJECTS' hightlightStyle='text-primary bg-secondary' title='Explore our latest projects'>
             <p className='w-1/2 text-center text-[#737577] self-center' data-aos='fade-left'>
@@ -32,6 +34,9 @@ const OurProducts = () => {
             <p className='text-[1.6rem] text-primary leading-[2.56rem]'>PowerPlant</p>
         </div>
     </section>
+    
+    </>
+    }
     </>
   )
 }
