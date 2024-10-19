@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionWrapper from './SectionWrapper'
 import SectionHeader from './SectionHeader'
+import Carousel from './Carousel'
 
 const Testimonials:React.FC<HomePageProps> = ({hide = false}) => {
   return (
@@ -14,6 +15,7 @@ const Testimonials:React.FC<HomePageProps> = ({hide = false}) => {
             </p>
         </SectionHeader>
         {/* CAROUSEL */}
+        <Carousel />
     </SectionWrapper>}
     </>
   )
