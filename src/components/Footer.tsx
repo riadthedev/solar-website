@@ -41,7 +41,7 @@ const Footer = () => {
           <h1 className='text-[2.2rem] font-semibold leading-[2.42rem]'>Newsletter</h1>
           <ul className='flex-1 flex flex-col space-y-[1rem]'>
             <li className='flex items-center gap-[0.8rem]'><span>Be the first to get the latest from us</span></li>
-            <li className='flex bg-white justify-between p-[0.7rem]'><input type="email" className='w-full text-black outline-none' placeholder='Your email' /><div className='bg-primary px-[0.9rem] py-[1.06rem]'><IoSendOutline /></div></li>
+            <li className='flex bg-white justify-between p-[0.7rem]'><input type="email" className='w-full text-black outline-none' placeholder='Your email' /><div className='bg-primary px-[0.9rem] py-[1.06rem] transition duration-300 hover:scale-[1.04] active:scale-[0.95] cursor-pointer'><IoSendOutline /></div></li>
           </ul>
         </div>
       </section>
