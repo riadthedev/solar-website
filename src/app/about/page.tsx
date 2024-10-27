@@ -1,8 +1,9 @@
+import AboutPage from '@/screens/AboutPage'
 import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <AboutPage />
   )
 }
 
