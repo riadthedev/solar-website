@@ -6,7 +6,7 @@ import Carousel from './Carousel'
 const Testimonials:React.FC<HomePageProps> = ({hide = false}) => {
   return (
     <>
-   {!hide && <SectionWrapper>
+   {!hide && <SectionWrapper classname='bg-white'>
         <SectionHeader highlight='TESTIMONIALS' hightlightStyle='text-primary bg-secondary' title='Our customers give love feedback'>
             <p className='w-1/2 text-center text-[#737577] self-center' data-aos='fade-left'>
             At Mentary, we believe in the power of renewable energy to create a more
