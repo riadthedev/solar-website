@@ -1,10 +1,12 @@
 import React from 'react'
 import SectionWrapper from './SectionWrapper'
 import SectionHeader from './SectionHeader'
+import Carousel from './Carousel'
 
-const Testimonials = () => {
+const Testimonials:React.FC<HomePageProps> = ({hide = false}) => {
   return (
-    <SectionWrapper>
+    <>
+   {!hide && <SectionWrapper classname='bg-white'>
         <SectionHeader highlight='TESTIMONIALS' hightlightStyle='text-primary bg-secondary' title='Our customers give love feedback'>
             <p className='w-1/2 text-center text-[#737577] self-center' data-aos='fade-left'>
             At Mentary, we believe in the power of renewable energy to create a more
@@ -13,7 +15,9 @@ const Testimonials = () => {
             </p>
         </SectionHeader>
         {/* CAROUSEL */}
-    </SectionWrapper>
+        <Carousel />
+    </SectionWrapper>}
+    </>
   )
 }
 

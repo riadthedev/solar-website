@@ -3,9 +3,10 @@ import SectionWrapper from './SectionWrapper'
 import SectionHeader from './SectionHeader'
 import { Button } from '../ui/button'
 
-const LatestPost = () => {
+const LatestPost:React.FC<HomePageProps> = ({hide = false}) => {
     return (
-        <SectionWrapper>
+        <>
+        {!hide && <SectionWrapper>
             <SectionHeader highlight='LATEST POST' hightlightStyle='text-primary bg-secondary' title='Read our latest solar insights'>
                 <Button className='rounded-none text-[1.6rem] px-[1.8rem] py-[1.8rem] w-fit flex gap-x-2 hover:scale-[1.08] active:scale-[0.95] transition ease-in-out duration-300 self-center'><span>View More</span><img src="/assets/icons/view-arrow.svg" alt="" /></Button>
             </SectionHeader>
@@ -65,7 +66,8 @@ const LatestPost = () => {
                     </div>
                 </div>
             </section>
-        </SectionWrapper>
+        </SectionWrapper>}
+        </>
     )
 }
 
