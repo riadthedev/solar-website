@@ -4,16 +4,18 @@ import SectionWrapper from './SectionWrapper';
 
 const VideoPlayer: React.FC<HomePageProps> = ({hide = false}) => {
 
-    const videoRef = useRef(null);  // Reference to the video element
+    const videoRef = useRef<HTMLVideoElement>(null);  // Reference to the video element
     const [isPlaying, setIsPlaying] = useState(false); // Control video state
-  
+
     const handlePlayPause = () => {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
+      if (videoRef.current) {
+        if (isPlaying) {
+          videoRef.current.pause();
+        } else {
+          videoRef.current.play();
+        }
+        setIsPlaying(!isPlaying); // Toggle the play/pause state
       }
-      setIsPlaying(!isPlaying); // Toggle the play/pause state
     };
 
   return (
